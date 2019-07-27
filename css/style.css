@@ -1,0 +1,263 @@
+/* reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* fonts */
+@font-face {
+	font-family: HelveticaNeueLTStd;
+	src: url("../fonts/Helvetica/HelveticaNeueLTStd-ThCn.otf") format("truetype");
+}
+@font-face {
+	font-family: "Open Sans Regular";
+	src: url("../fonts/OpenSans/woff2/opensans-regular.woff2") format("woff2"),
+		url("../fonts/OpenSans/woff/opensans-regular.woff") format("woff"),
+		url("../fonts/OpenSans/ttf/opensans-regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Open Sans Light";
+	src: url("../fonts/OpenSans/woff2/opensans-light.woff2") format("woff2"),
+		url("../fonts/OpenSans/woff/opensans-light.woff") format("woff"),
+		url("../fonts/OpenSans/ttf/opensans-light.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Open Sans Bold";
+	src: url("../fonts/OpenSans/woff2/opensans-bold.woff2") format("woff2"),
+		url("../fonts/OpenSans/woff/opensans-bold.woff") format("woff"),
+		url("../fonts/OpenSans/ttf/opensans-bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Open Sans Italic";
+	src: url("../fonts/OpenSans/woff2/opensans-italic.woff2") format("woff2"),
+		url("../fonts/OpenSans/woff/opensans-italic.woff") format("woff"),
+		url("../fonts/OpenSans/ttf/opensans-italic.ttf") format("truetype");
+}
+/* main styles */
+footer {
+	background: #19263d url("../img/footer-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	overflow: hidden;
+	font-family: "Open Sans Regular";
+	font-size: 14px;
+	color: #fff;
+	line-height: 1;
+	padding: 0 30px 0 30px;
+}
+.footer-wrapper {
+	max-width: 770px;
+	margin: auto;
+}
+.footer-h {
+	font-family: HelveticaNeueLTStd, sans-serif;
+	font-weight: 300;
+	color: #e76122;
+	text-transform: uppercase;
+}
+.contact-section {
+	padding-top: 6.8em;
+}
+.contact-h2 {
+	font-size: 48px;
+	margin-bottom: 0.19em;
+}
+.address {
+	font-family: "Open Sans Light";
+	font-size: 18px;
+}
+.social {
+	margin-top: 1.7em;
+}
+.social a {
+	display: inline-block;
+	border-radius: 50%;
+	width: 41px;
+	height: 41px;
+	margin-right: 9px;
+}
+.social a:last-child {
+	margin-right: 0;
+}
+.social a:hover,
+#submit-btn:hover {
+	-webkit-filter: brightness(90%);
+	filter: brightness(90%);
+	transition: all 0.3s ease;
+}
+a.icon-facebook {
+	background: #5378bc url("../img/social/facebook.svg");
+}
+a.icon-twitter {
+	background: #36d0f7 url("../img/social/twitter.svg");
+}
+a.icon-linkedin {
+	background: #007ab5 url("../img/social/linkedin.svg");
+}
+a.icon-pinterest {
+	background: #e92a2a url("../img/social/pinterest.svg");
+}
+a.icon-facebook,
+a.icon-twitter,
+a.icon-linkedin,
+a.icon-pinterest {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 17px 17px;
+}
+.message-section {
+	margin-top: 1.8em;
+	margin-bottom: 8.2em;
+}
+.message-h3 {
+	font-size: 30px;
+	margin-bottom: 0.4em;
+}
+.message-description {
+	font-family: "Open Sans Italic";
+	line-height: 1.75;
+}
+.message-form {
+	margin-top: 2em;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 30px 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 30px;
+	grid-row-gap: 15px;
+	justify-items: center;
+}
+.message-form input[type="text"] {
+	-ms-grid-column: 1;
+	grid-column: 1;
+	-ms-grid-row: 1;
+	grid-row: 1;
+}
+.message-form input[type="email"] {
+	-ms-grid-column: 1;
+    grid-column: 1;
+	-ms-grid-row: 2;
+	grid-row: 2;
+}
+.message-form input[type="tel"] {
+	-ms-grid-column: 1;
+    grid-column: 1;
+	-ms-grid-row: 3;
+	grid-row: 3;
+}
+.message-form textarea {
+	-ms-grid-column: 2;
+    grid-column: 2;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 3;
+	grid-row: 1 / 4;
+}
+.message-form #submit-btn {
+	-ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+}
+.message-form input, .message-form textarea {
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 1.12em;
+}
+.message-form textarea {
+	resize: none;
+}
+.message-form input::-webkit-input-placeholder,
+.message-form textarea::-webkit-input-placeholder {
+	font-family: "Open Sans Regular";
+	font-size: 14px;
+	color: #777;
+}
+.message-form input::-moz-placeholder,
+.message-form textarea::-moz-placeholder {
+	font-family: "Open Sans Regular";
+	font-size: 14px;
+	color: #777;
+}
+.message-form input:-ms-input-placeholder,
+.message-form textarea:-ms-input-placeholder {
+	font-family: "Open Sans Regular";
+	font-size: 14px;
+	color: #777;
+}
+.message-form input:-moz-placeholder,
+.message-form textarea:-moz-placeholder {
+	font-family: "Open Sans Regular";
+	font-size: 14px;
+	color: #777;
+}
+#submit-btn {
+	font-family: "Open Sans Bold";
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #5dbdb1;
+	border-radius: 5px;
+	width: 170px;
+	padding: 0.7em;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.bottom-section {
+	font-family: "Open Sans Regular";
+	font-size: 13px;
+	text-transform: uppercase;
+	padding-bottom: 2.5em;
+}
+#dash {
+	display: block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 881px;
+	height: 2px;
+}
+.developer {
+	margin-top: 2.2em;
+	margin-bottom: 1.5em;
+}
+#arrow {
+	width: 15px;
+	height: 20px;
+}
+/* media queries */
+@media screen and (max-width: 600px) {
+	footer {
+		padding: 0 15px 0 15px;
+	}
+	.contact-h2 {
+		font-size: 36px;
+	}
+	.address {
+		font-size: 16px;
+	}
+	.message-h3 {
+		font-size: 20px;
+	}
+	.message-form input[type="text"],
+	.message-form input[type="email"],
+	.message-form input[type="tel"],
+	.message-form textarea {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+		grid-column: 1 / 3;
+	}
+	.message-form textarea {
+		-ms-grid-row: 4;
+		grid-row: 4;
+		height: 7em;
+	}
+}
+@media screen and (max-width: 420px) {
+	.contact-h2 {
+		font-size: 28px;
+	}
+	.developer {
+		line-height: 1.5;
+	}
+}
